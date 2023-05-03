@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('../images/BG.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -100;
+    opacity: 0.7;
+}
+body{
+    height: 100vh;
+    font-size: 32px;
+    font-weight: 900;
+    overflow-x: hidden;
+    background-color: darkblue;
+}
+p{
+    padding: 60px 0;
+    text-align: center;
+}
+form{
+    margin: 55px auto 55px auto;
+    width: 450px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    row-gap: 25px;
+    font-size: 32px;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+input,button{
+    background: none;
+    border: none;
+}
+input:focus{
+    outline: none;
+}
+input{
+    cursor: pointer;
+    padding: 10px 15px;
+    width: 100%;
+    color: white;
+    font-size: 22px;
+    border: 1px solid white;
+}
+input::placeholder{
+    color: white;
+}
+img{
+    object-fit: cover;
+    height: 150px;
+    width: 150px;
+}
+.container{
+    position: relative;
+    display: grid;
+    gap: 60px;
+    justify-content: center;
+    z-index: 100;
+    grid-template-columns: repeat(3, minmax(250px, 450px));
+}

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+    <!-- ? fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- ? icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- ? Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- ? styles -->
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <!-- ? header -->
+    <header>
+        <section class="header">
+            <div class="header__container container">
+                <div class="header__dropdown">
+                    <p class="header__catalog">Каталог
+                        <div class="arrow">
+                            <span class="material-symbols-outlined">
+                                expand_more
+                            </span>
+                        </div>
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="action.php">Экшен</a>
+                        </li>
+                        <li>
+                            <a href="indie.php">Инди</a>
+                        </li>
+                        <li>
+                            <a href="adventures.php">Приключения</a>
+                        </li>
+                        <li>
+                            <a href="strategies.php">Стратегии</a>
+                        </li>
+                        <li>
+                            <a href="anime.php">Аниме</a>
+                        </li>
+                        <li>
+                            <a href="races.php">Гонки</a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#about" class="header__link">О нас</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#discount" class="header__link">Скидки</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#reviews" class="header__link">Отзывы</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#warranty" class="header__link">Гарантия</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#buy" class="header__link">Как купить</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__item">
+                    <div class="basket__wrapper">
+                        <div class="basket__icon">
+                            <span class="material-symbols-outlined">
+                                shopping_cart
+                            </span>
+                        </div>
+                        <div class="basket__count">0</div>
+                        <div class="basket">
+                            <ul class="basket__list">
+                            </ul>
+                            <div class="basket__controllers">
+                                <a href="buyItems.php" class="basket__buy">Купить товары</a>
+                                <button class="basket__delete">Удалить все товары</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- ? wrapper -->
+
+    <div class="wrapper">
+        <main class="main">
+
+            <section class="hero" id="hero">
+                <div class="hero__container container">
+                    <h1 class="hero__title title">STEAM <span class="hero__title-white">HOT KEYS</span></h1>
+                    <p class="hero__subtitle">магазин видеоигр</p>
+                </div>
+            </section>
+
+            <section class="about" id="about">
+                <div class="about__container container">
+                    <h2 class="about__title title">О нас</h2>
+                    <ul class="about__list">
+                        <li class="about__item">
+                            <span class="about__num">5</span>
+                            <p class="about__text">лет успешно продаем игры</p>
+                        </li>
+                        <li class="about__item">
+                            <p class="about__text">более</p>
+                            <span class="about__num">500</span>
+                            <p class="about__text">реальных отзывов</p>
+                        </li>
+                        <li class="about__item">
+                            <p class="about__text">более</p>
+                            <span class="about__num">200</span>
+                            <p class="about__text">игр в <br> наличии</p>
+                        </li>
+                    </ul>
+                    <div class="about__paypal">
+                        <div class="paypal">
+                            <div class="paypal__icon">
+                                <span class="material-symbols-outlined">
+                                    payments
+                                </span>
+                            </div>
+                            <p class="paypal__text">Множество способов оплаты</p>
+                        </div>
+                        <div class="paypal">
+                            <div class="paypal__icon">
+                                <span class="material-symbols-outlined">
+                                    percent
+                                </span>
+                            </div>
+                            <div class="paypal__text">Регулярные скидки и акции</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="discount" id="discount">
+                <div class="discount__container container">
+                    <h3 class="discount__title title">Скидки</h3>
+                    <ul class="discount__list">
+                        <li class="discount__item">
+                                <article class="discount__card">
+                                    <div class="discount__image">
+                                        <img src="./images/аниме/18fcf72950eec6bdd382936bf07271d4.webp" id="image" alt="picture">
+                                    </div>
+                                    <div class="discount__body">
+                                        <p class="discount__name">Аниме</p>
+                                        <p class="discount__descr">Аниме для четких пацанов</p>
+                                        <div class="discount__price">
+                                            <span class="discount__price-old">5000р</span>
+                                            <span class="discount__price-new">3000р</span>
+                                        </div>
+                                    </div>
+                                    <button class="add">Добавить в корзину</button>
+                                </article>
+                        </li>
+                        <li class="discount__item">
+                                <article class="discount__card">
+                                    <div class="discount__image">
+                                        <img src="./images/гонки/381d38ea078d4b1017eecc29b67fa82f.webp" id="image" alt="picture">
+                                    </div>
+                                    <div class="discount__body">
+                                        <p class="discount__name">Гонки</p>
+                                        <p class="discount__descr">Гонки для четких пацанов</p>
+                                        <div class="discount__price">
+                                            <span class="discount__price-old">5000р</span>
+                                            <span class="discount__price-new">3000р</span>
+                                        </div>
+                                    </div>
+                                    <button class="add">Добавить в корзину</button>
+                                </article>
+                        </li>
+                        <li class="discount__item">
+                                <article class="discount__card">
+                                    <div class="discount__image">
+                                        <img src="./images/инди/6425264738.jpg" id="image" alt="picture">
+                                    </div>
+                                    <div class="discount__body">
+                                        <p class="discount__name">Инди</p>
+                                        <p class="discount__descr">Инди для четких пацанов</p>
+                                        <div class="discount__price">
+                                            <span class="discount__price-old">5000р</span>
+                                            <span class="discount__price-new">3000р</span>
+                                        </div>
+                                    </div>
+                                    <button class="add">Добавить в корзину</button>
+                                </article>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="reviews" id="reviews">
+                <div class="reviews__container container">
+                    <h4 class="reviews__title title">Отзывы</h4>
+                        <!-- ? Swiper --> 
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="reviews__item">
+                                    @VideoViking
+                                    Я рекомендую магазин "Steam Hot Keys" всем геймерам, которые
+                                    ищут надежный и удобный магазин для приобретения игр и
+                                    цифровых товаров для Steam. Я уже несколько раз делал заказы
+                                    на этом сайте, и каждый раз мне приходило все без проблем.
+                                    Отличный выбор продуктов и отзывчивая служба поддержки!
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews__item">
+                                    @VideoViking
+                                    Я рекомендую магазин "Steam Hot Keys" всем геймерам, которые
+                                    ищут надежный и удобный магазин для приобретения игр и
+                                    цифровых товаров для Steam. Я уже несколько раз делал заказы
+                                    на этом сайте, и каждый раз мне приходило все без проблем.
+                                    Отличный выбор продуктов и отзывчивая служба поддержки!
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews__item">
+                                    @VideoViking
+                                    Я рекомендую магазин "Steam Hot Keys" всем геймерам, которые
+                                    ищут надежный и удобный магазин для приобретения игр и
+                                    цифровых товаров для Steam. Я уже несколько раз делал заказы
+                                    на этом сайте, и каждый раз мне приходило все без проблем.
+                                    Отличный выбор продуктов и отзывчивая служба поддержки!
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews__item">
+                                    @VideoViking
+                                    Я рекомендую магазин "Steam Hot Keys" всем геймерам, которые
+                                    ищут надежный и удобный магазин для приобретения игр и
+                                    цифровых товаров для Steam. Я уже несколько раз делал заказы
+                                    на этом сайте, и каждый раз мне приходило все без проблем.
+                                    Отличный выбор продуктов и отзывчивая служба поддержки!
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews__item">
+                                    @VideoViking
+                                    Я рекомендую магазин "Steam Hot Keys" всем геймерам, которые
+                                    ищут надежный и удобный магазин для приобретения игр и
+                                    цифровых товаров для Steam. Я уже несколько раз делал заказы
+                                    на этом сайте, и каждый раз мне приходило все без проблем.
+                                    Отличный выбор продуктов и отзывчивая служба поддержки!
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews__item">
+                                    @VideoViking
+                                    Я рекомендую магазин "Steam Hot Keys" всем геймерам, которые
+                                    ищут надежный и удобный магазин для приобретения игр и
+                                    цифровых товаров для Steam. Я уже несколько раз делал заказы
+                                    на этом сайте, и каждый раз мне приходило все без проблем.
+                                    Отличный выбор продуктов и отзывчивая служба поддержки!
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews__item">
+                                    @VideoViking
+                                    Я рекомендую магазин "Steam Hot Keys" всем геймерам, которые
+                                    ищут надежный и удобный магазин для приобретения игр и
+                                    цифровых товаров для Steam. Я уже несколько раз делал заказы
+                                    на этом сайте, и каждый раз мне приходило все без проблем.
+                                    Отличный выбор продуктов и отзывчивая служба поддержки!
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews__item">
+                                    @VideoViking
+                                    Я рекомендую магазин "Steam Hot Keys" всем геймерам, которые
+                                    ищут надежный и удобный магазин для приобретения игр и
+                                    цифровых товаров для Steam. Я уже несколько раз делал заказы
+                                    на этом сайте, и каждый раз мне приходило все без проблем.
+                                    Отличный выбор продуктов и отзывчивая служба поддержки!
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews__item">
+                                    @VideoViking
+                                    Я рекомендую магазин "Steam Hot Keys" всем геймерам, которые
+                                    ищут надежный и удобный магазин для приобретения игр и
+                                    цифровых товаров для Steam. Я уже несколько раз делал заказы
+                                    на этом сайте, и каждый раз мне приходило все без проблем.
+                                    Отличный выбор продуктов и отзывчивая служба поддержки!
+                                </div>
+                            </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                </div>
+            </section>
+
+            <section class="warranty" id="warranty">
+                <div class="warranty__container container">
+                    <h5 class="warranty__title title">Гарантии</h5>
+                    <div class="warranty__info">
+                        Уважаемые покупатели!
+                        В интернет-магазине «Steam Hot Keys» мы гарантируем высокое качество всех
+                        приобретаемых у нас видеоигр и цифровых товаров. Мы стремимся к тому, чтобы
+                        каждый наш клиент был доволен покупкой и обслуживанием.
+                        При покупке у нас вы можете быть уверены в следующих гарантиях:
+                        Гарантия
+                        1. Гарантия подлинности и качества товара. Все игры закупаются оптом у
+                        официальных издателей игры: 1С, Electronic Arts, Бука, Новый диск, Valve, Акелла и
+                        других. На все игры предоставляется вечная гарантия. После покупки, лицензионные
+                        ключи Вы можете активировать в любое время, когда удобно Вам.
+                        2. Гарантия защиты покупателя. Мы обеспечиваем безопасность покупок и защиту
+                        покупателей. Если у вас возникнут какие-либо вопросы или проблемы, пожалуйста,
+                        свяжитесь с нашей службой поддержки клиентов. Мы всегда рады помочь вам
+                        решить любые проблемы.
+                        3. Гарантия возврата. Если вы не удовлетворены приобретенным товаром, мы готовы
+                        вернуть вам деньги или предложить замену товара.
+                        Мы ценим каждого нашего клиента и постоянно работаем над тем, чтобы наш магазин
+                        был лучшим местом для покупки видеоигр и цифровых товаров. Если у вас есть
+                        вопросы или пожелания, пожалуйста, свяжитесь с нами. Мы всегда готовы помочь вам.
+                    </div>
+                </div>
+            </section>
+
+            <section class="buy" id="buy">
+                <div class="buy__container container">
+                    <h6 class="buy__title title">Как купить?</h6>
+                    <div class="buy__info">
+                        Для того чтобы купить ключ для игры Steam в нашем интернет-магазине, вам нужно
+                        сделать следующие шаги:
+                        1. Выберите игру, которую вы хотите купить, и нажмите на кнопку "Купить".
+                        2. Добавьте игру в корзину и перейдите в нее.
+                        3. Проверьте корзину и нажмите кнопку "Оформить заказ".
+                        4. На странице оформления заказа вам необходимо заполнить свои контактные данные
+                        и выбрать способ оплаты.
+                        Любой товар на нашем сайте можно оплатить онлайн — электронными деньгами
+                        Яндекс.Деньги, QiWi, WebMoney. Также через мобильные операторы МТС, Билайн,
+                        Мегафон. Через кредитные карты Visa & Mastercard и наличные через терминалы
+                        оплаты.
+                        5. После того, как вы заполнили все данные, нажмите кнопку "Оплатить".
+                        6. После оплаты мы отправим вам электронное письмо со ссылкой на страницу, на
+                        которой вы сможете получить ключ для активации игры в Steam.
+                        7. Зайдите в свой аккаунт Steam и активируйте игру с помощью полученного ключа.
+                        Если у вас будут какие-либо вопросы или проблемы, свяжитесь с нашей службой
+                        поддержки клиентов. Наши менеджеры всегда готовы помочь вам решить любые
+                        проблемы, касающиеся покупки ключей для Steam игр в нашем интернет-магазине.
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+
+
+    <!-- ? footer -->
+    <footer>
+        <section class="footer">
+            <div class="footer__container container">
+                <div class="footer__info">
+                    Наши контакты: <br>
+                    7(999)744-63-39 <br>
+                    7(999)299-63-90 <br>
+                    steamhotkeys.support.gmail.com 
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+    <!-- ? Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
